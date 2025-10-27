@@ -1,14 +1,23 @@
-# 1. Instala git si no lo tienes
+# 1 Instalar Git si no lo tienes
 sudo apt update && sudo apt install -y git
 
-# 2. Clona el repositorio
+# 2 Clonar el repositorio
 git clone https://github.com/Ryuz-crypto/dnsmasq_ssearch.git
 
-# 3. Entra al directorio del proyecto
+# 3 Entrar al directorio
 cd dnsmasq_ssearch
 
-# 4. Asigna permisos de ejecución al script
+# 4 Corregir formato de Windows a Linux
+sudo apt install -y dos2unix
+
+# 5 Aplicarlo al archivo
+sudo dos2unix DNSMasq.sh
+
+# 6 Dar permisos al archivo
 sudo chmod +x DNSMasq.sh
 
-# 5. Ejecuta el instalador con privilegios de root
+# 7 Ejecutarlo
 sudo ./DNSMasq.sh
+
+# 8 Disfruta
+
