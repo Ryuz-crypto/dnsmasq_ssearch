@@ -11,16 +11,16 @@
 
 set -e
 
-echo "=== 🧠 SafeSearch DNS Installer v2.4 ==="
+echo "=== SafeSearch DNS Installer v2.4 ==="
 echo "Autor: Ryuz-crypto"
 echo ""
 
 if [ "$EUID" -ne 0 ]; then
-  echo "❌ Ejecuta con sudo o como root."
+  echo " Ejecuta con sudo o como root."
   exit 1
 fi
 
-echo "🔍 Detectando hardware e interfaz de red..."
+echo " Detectando hardware e interfaz de red..."
 
 CPUS=$(nproc)
 RAM_MB=$(awk '/MemTotal/ {print int($2/1024)}' /proc/meminfo)
@@ -171,4 +171,5 @@ dig @127.0.0.1 www.bing.com +short || true
 echo ""
 echo "Script por Ryuz-crypto "
 ###############################################################################
+
 
