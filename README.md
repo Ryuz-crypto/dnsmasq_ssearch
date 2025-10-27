@@ -1,4 +1,4 @@
-Realiza la configuración de un servidor DNS en Ubuntu Server para SafeSearch exclusivamente, detecte CPU, RAM y parametriza de acuerdo a eso los logs.
+Realiza la configuración de un servidor DNS en Ubuntu Server para SafeSearch exclusivamente, detecta CPU, RAM y HDD interfaz de acceso y parametriza de acuerdo a eso los logs de retención.
 
 # 1 Instalar Git
 sudo apt update && sudo apt install -y git
