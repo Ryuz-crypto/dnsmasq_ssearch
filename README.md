@@ -1,4 +1,6 @@
-# 1 Instalar Git si no lo tienes
+Realiza la configuración de un servidor DNS en Ubuntu Server para SafeSearch exclusivamente, detecte CPU, RAM y parametriza de acuerdo a eso los logs.
+
+# 1 Instalar Git
 sudo apt update && sudo apt install -y git
 
 # 2 Clonar el repositorio
@@ -19,5 +21,19 @@ sudo chmod +x DNSMasq.sh
 # 7 Ejecutarlo
 sudo ./DNSMasq.sh
 
-# 8 Disfruta
+# Resumen:
+sudo apt update && sudo apt install -y git
+git clone https://github.com/Ryuz-crypto/dnsmasq_ssearch.git
+cd dnsmasq_ssearch
+sudo apt install -y dos2unix
+sudo dos2unix DNSMasq.sh
+sudo chmod +x DNSMasq.sh
+sudo ./DNSMasq.sh
+
+
+
+
+
+
+
 
